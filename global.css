@@ -1,0 +1,42 @@
+.box-model-external{
+    padding: 10px;
+    border: 1px solid rebeccapurple;
+    margin: 10px;
+}
+
+.p-all-sides{
+    padding: 30px;
+    margin: 0;
+    border: 1px solid green;
+}
+
+.pl-30{
+    padding-left: 30px;
+    margin: 0;
+    border: 1px solid green;
+}
+
+.pt-30{
+    padding-top: 30px;
+    margin: 0;
+    border: 1px solid green;
+}
+
+.pr-30{
+    padding-right: 30px;
+    margin: 0;
+    border: 1px solid green;
+}
+
+.pb-30{
+    padding-bottom: 30px;
+    margin: 0;
+    border: 1px solid green;
+}
+
+.py{
+    /* 40px - top and bottom; 90px - left and right */
+    padding: 40px 90px; 
+    margin: 0;
+    border: 1px solid green;
+}

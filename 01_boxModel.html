@@ -1,0 +1,44 @@
+<!-- 1. Box Model
+   > box-model: box-model mainly we can see in html elements. Box-model will have content/text,   padding, border and margin.
+   > Around the content we have some space then it will known as padding.
+   > Between padding and margin we have border
+   > After the border we can have some space then it is called margin -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- External style linkage -->
+    <link href="global.css" /> 
+    <!-- Internal styles -->
+    <style>
+        .box-model{
+            padding: 10px;
+            border: 1px solid rebeccapurple;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Box Model & Inline Styles -->
+    <div style="padding: 10px;border: 1px solid rebeccapurple;margin: 10px;">Sample Text_1 (BOX MODEL & INLINE STYLES)</div>
+    <div style="padding: 10px;border: 1px solid rebeccapurple;margin: 10px;">Sample Text_2 (BOX MODEL & INLINE STYLES)</div>
+
+    <!-- Internal styles -->
+    <div class="box-model">Sample Text_3 (INTERNAL STYLES)</div>
+    <div class="box-model">Sample Text_4 (INTERNAL STYLES)</div>
+    <div class="box-model">Sample Text_5 (INTERNAL STYLES)</div>
+    <div class="box-model">Sample Text_6 (INTERNAL STYLES)</div>
+    <div class="box-model">Sample Text_7 (INTERNAL STYLES)</div>
+    <div class="box-model">Sample Text_8 (INTERNAL STYLES)</div>
+    <div class="box-model">Sample Text_9 (INTERNAL STYLES)</div>
+    <div class="box-model">Sample Text_10 (INTERNAL STYLES)</div>
+
+    <!-- External Styles -->
+    <div class="box-model-external">Sample Text_1 (EXTERNAL STYLES)</div>
+    <div class="box-model-external">Sample Text_2 (EXTERNAL STYLES)</div>
+    <div class="box-model-external">Sample Text_3 (EXTERNAL STYLES)</div>
+</body>
+</html>
