@@ -102,3 +102,86 @@
    border-style: dotted;
    border-color: blueviolet; 
 }
+
+.border-top{
+    border-top: 2px solid blue;
+}
+
+.border-bottom{
+    border-bottom: 2px solid rgb(60, 122, 68);
+}
+
+.font-fam{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.google-font{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.font-wght{
+    font-weight: bolder;
+}
+
+.fsz-18{
+    font-size: 18px;
+}
+
+
+.fsz-24{
+    font-size: 24px;
+}
+
+.all-properties {
+    border: 2px solid gray;
+    color:rgb(133, 28, 28);
+    margin: 30px 0;
+}
+
+.all-properties-para{
+    padding: 10px;
+    text-align: justify;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+
+.bg-wrapper{
+    background-color: bisque;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.p-bg-1{
+    background-color: white;
+}
+
+.p-bg-2{
+    background-color: grey;
+    color: white;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.bg-wrapper-image{
+    background-color: cadetblue;
+    background-image: url('https://lh3.googleusercontent.com/p/AF1QipMSG5asG9ehmAfMSPaBwup-kJa5-VSe7iAYs02r=s1360-w1360-h1020');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-color{
+    color: white;
+}
