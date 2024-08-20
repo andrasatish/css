@@ -238,3 +238,42 @@
     height: 200px;
     width: 25%;
 }
+
+.relative-position-container{
+    position: relative;
+    background-color: blueviolet;
+    color: white;
+    width: 40%;
+    top: 50px;
+    left: 20px;
+}
+
+.position-rel{
+    position: relative;
+    height: 200px;
+    background-color: blanchedalmond;
+}
+
+.pos-ab{
+    background-color: aquamarine;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.position-fixed-container{
+    background: gray;
+    color: white;
+    width: 100%;
+    top: 2px;
+    position: fixed;
+}
+
+.position-fixed-container li{
+    display: inline;
+}
+
+.position-content{
+    margin-top: 55px;
+}

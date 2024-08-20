@@ -71,3 +71,7 @@ Inline: span, a, i, em, strong, b
    > overflow-x : it will add horizental scrollbar, overflow-y: it will add vertical scrollbar.
    > overflow-hidden : If content is overflow then those will be hidden
    > overflow-auto : Automatically scrollbar will add if data is overflow either it may be horizental or vertical.
+
+  8. Positions
+   > positions is used to move the element into specific position, we can fixed the element at specific place and we can stick the element at specific place.
+   > we have an different properties relative, absolute, fixed, sticky and static
