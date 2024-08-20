@@ -185,3 +185,56 @@
 .text-color{
     color: white;
 }
+
+
+.anchor-styles{
+    background: blue;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.visibility-hidden{
+    height: 300px;
+    background-color: gray;
+    color: white;
+    visibility: hidden;
+}
+
+.visibility-visible{
+    visibility: visible;
+}
+
+.menu-container{
+    list-style: none;
+    background: bisque;
+    padding: 10px;
+    width: 25%;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.menu-item{
+    display: inline;
+    padding: 10px;
+}
+
+.overflow-y-container{
+    height: 200px;
+    background-color: bisque;
+    overflow-y: scroll;
+}
+
+.overflow-hidden-container{
+    height: 200px;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+
+.overflow-auto-container{
+    overflow: auto;
+    background-color: chocolate;
+    margin-bottom: 300px;
+    height: 200px;
+    width: 25%;
+}
