@@ -75,3 +75,21 @@ Inline: span, a, i, em, strong, b
   8. Positions
    > positions is used to move the element into specific position, we can fixed the element at specific place and we can stick the element at specific place.
    > we have an different properties relative, absolute, fixed, sticky and static
+   > Postition relative: It is used to move the element from any place to any place 
+   > Position absolute: It is also same like as position relative but If we used combination of relative and absolute like as an ansyster(parent-child). parent as relative and child as absolute then if we can able to move absolute element with in the relative area.
+   > Position fixed: It will fix the element at specific place.
+   > Posistion sticky: It is used to stick the element along with the scroll.
+   > Position static: Default behaviour of any element is position static.
+   > Note: top, left, right and bottom these properties are works with positions only.
+
+  9. Z-Index
+  > Z-Index is used to arrange visibility stack order which one should visible on order.
+  > Z-index property works with positions only.
+
+  10. opacity
+  > opacity its nothing but it will grayed out based on value.
+  > value range from 0 - 1. If it is 0 element not display and 1 means it will display original color. In between 0-1 it will grayed out based on value.
+
+  11. MinWidth and MaxWidth
+  > MinWidth: It will take minimum width what you are specified and maximum it will take device width.
+  > MaxWidth: It will take width upto specified maximum width. It won't take more than specified width.

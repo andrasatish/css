@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons and Inputs</title>
+    <style>
+        .border-radius-container {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .border-radius-container:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid gray;
+        }
+
+        .input-styles {
+            border: 2px solid gray;
+            width: 200px;
+            border-radius: 4px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- border radius -->
+    <div style="margin:20px!important">
+        <h1>Border Radius</h1>
+        <span class="border-radius-container">
+            Click
+        </span>
+    </div>
+
+
+    <!-- button -->
+    <button class="border-radius-container">Click</button>
+
+    <br />
+
+    <!-- Input -->
+    <h1 style="margin-top: 50px;">Input</h1>
+    <input type="text" placeholder="Phone number ex: 999" class="input-styles">
+</body>
+
+</html>

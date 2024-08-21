@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .relative-container{
+            position: relative;
+        }
+        .absolute-container{
+            position: absolute;
+            top: 0;
+            z-index: 2;
+        }
+        .image-container{
+            position: absolute;
+            z-index: 1;
+        }
+        .relative-container-1{
+            position: relative;
+            top: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="relative-container">
+        <div class="absolute-container">
+            <h1>Z-Index</h1>
+            <p>Z-Index is used to arrange visibility stack order which one should visible on order.</p>
+        </div>
+        <img src="https://www.w3schools.com/cssref/w3css.gif" class="image-container"/>
+    </div>
+
+    <div class="relative-container-1">
+        <div style="width: 100px;height: 100px;background-color: aquamarine;position: absolute;top: 0;left: 20px;z-index: 3;">1</div>
+        <div style="width: 100px;height: 100px;background-color: bisque;position: absolute;top: 50px;left: 50px;z-index: 2;">2</div>
+        <div style="width: 100px;height: 100px;background-color: cadetblue;position: absolute;top: 100px;left: 100px;z-index: 1;">3</div>
+    </div>
+</body>
+</html>
