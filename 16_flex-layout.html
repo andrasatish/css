@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .top-menu {
+            display: flex;
+            background-color: blanchedalmond;
+            justify-content: space-between;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+
+        .content-container {
+            display: flex;
+        }
+
+        .side-nav {
+            background-color: aqua;
+            height: 100%;
+            width: 15%;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        .main-content {
+            background-color: whitesmoke;
+            height: 100%;
+            width: 85%;
+            margin-left: 15%;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+        .top-menu-center .menu-wrapper,
+        .side-nav ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .p-40 {
+            padding-top: 40px;
+        }
+
+        .top-menu-center li {
+            display: inline;
+            padding: 0 20px;
+        }
+
+        .settings-item {
+            padding: 0 20px;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .py-7 {
+            padding: 7px 0;
+        }
+
+
+        /* Tablet media query */
+        @media screen and (min-width: 768px) and (max-width: 1023px ){
+            .side-nav{
+                width: 20%;
+            }
+            .main-content{
+                width: 80%;
+                margin-left: 20%;
+            }
+        }
+
+        
+        /* Mobile media query */
+        @media screen and (min-width: 425px) and (max-width: 767px ){
+            .side-nav{
+                width: 40%;
+                display: none;
+            }
+            .main-content{
+                width: 100%;
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-menu">
+        <div class="top-menu-logo cursor-pointer">Logo</div>
+        <div class="top-menu-center">
+            <ul class="menu-wrapper">
+                <li class="cursor-pointer">Clothes</li>
+                <li class="cursor-pointer">Mens</li>
+                <li class="cursor-pointer">Womens</li>
+                <li class="cursor-pointer">Electronis</li>
+            </ul>
+        </div>
+        <div class="top-menu-setting">
+            <span class="settings-item cursor-pointer">Settings</span>
+            <span class="settings-item cursor-pointer" style="padding-right: 31px;">Logout</span>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="side-nav">
+            <ul class="p-40">
+                <li class="py-7">Menu Item_1</li>
+                <li class="py-7">Menu Item_2</li>
+                <li class="py-7">Menu Item_3</li>
+                <li class="py-7">Menu Item_4</li>
+                <li class="py-7">Menu Item_5</li>
+                <li class="py-7">Menu Item_6</li>
+                <li class="py-7">Menu Item_7</li>
+                <li class="py-7">Menu Item_8</li>
+                <li class="py-7">Menu Item_9</li>
+                <li class="py-7">Menu Item_10</li>
+                <li class="py-7">Menu Item_11</li>
+                <li class="py-7">Menu Item_12</li>
+
+                <li class="py-7">Menu Item_1</li>
+                <li class="py-7">Menu Item_2</li>
+                <li class="py-7">Menu Item_3</li>
+                <li class="py-7">Menu Item_4</li>
+                <li class="py-7">Menu Item_5</li>
+                <li class="py-7">Menu Item_6</li>
+                <li class="py-7">Menu Item_7</li>
+                <li class="py-7">Menu Item_8</li>
+                <li class="py-7">Menu Item_9</li>
+                <li class="py-7">Menu Item_10</li>
+                <li class="py-7">Menu Item_11</li>
+                <li class="py-7">Menu Item_12</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, nisi ipsam explicabo facilis deserunt
+                accusamus doloribus labore. Aliquam officia aspernatur error numquam deserunt, consequuntur est maxime.
+                Praesentium aspernatur autem veniam recusandae repellendus ullam natus sit, labore architecto maxime
+                temporibus nam veritatis quam sapiente magnam voluptatum officiis ratione, accusantium, eos quos odio
+                hic iste? Molestiae laborum quasi laudantium! Debitis error veniam saepe! Consequuntur doloremque
+                facilis, voluptas rem, expedita rerum perferendis temporibus sit in, voluptatum quo laborum? Magni vero
+                minus omnis dolor impedit excepturi iusto autem reiciendis alias. Itaque rerum quia dignissimos nisi,
+                provident dicta praesentium sunt non minus quaerat placeat! Modi minima incidunt maiores corporis maxime
+                explicabo veritatis unde pariatur accusantium neque eligendi et aliquam quasi optio quam officiis
+                voluptatum sunt voluptatibus, labore veniam velit quisquam doloremque? Sed saepe officia eligendi fugiat
+                reprehenderit, iure distinctio dolorum praesentium. Est, facere culpa minus veniam quis at dolorum alias
+                ipsum quidem veritatis, voluptate quas nam fuga blanditiis tempora repellendus distinctio doloremque.
+                Iure dicta magnam reiciendis, et ratione sapiente? Placeat in id perferendis aspernatur, provident rerum
+                itaque excepturi at consequatur, aliquid incidunt saepe dolores quo rem quae harum non totam dicta?
+                Assumenda ratione harum tenetur animi cumque perspiciatis ut magnam vero? Quia cumque est ipsum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi cupiditate, laudantium maxime quidem
+                laboriosam ipsum ea commodi. Ipsam ab hic voluptates sequi consequuntur nostrum expedita qui laborum
+                voluptas deleniti possimus eveniet unde nisi asperiores cum labore saepe, rerum nam eos magnam vel
+                sapiente culpa atque illo. Enim doloribus natus veritatis et assumenda. Adipisci pariatur officiis vel
+                optio natus, odit velit, aliquam quam iste maxime magni officia voluptas, molestiae dolorum itaque sequi
+                ad consequatur. Non, eius possimus? Alias adipisci unde incidunt, aliquid iste facere vel! Quae,
+                possimus, similique magnam aliquam praesentium aperiam dicta nostrum deserunt quisquam minus veniam,
+                iusto fugit alias? Magni earum corporis laudantium ducimus asperiores qui ratione pariatur nobis cumque
+                eaque, provident velit dolore autem sequi ad libero, similique iure et ab! Quisquam in non, nemo sed
+                accusantium, quo dolores magni delectus error sit recusandae! Numquam, nostrum eum, ratione error sed
+                laboriosam ea sit saepe aperiam accusantium explicabo aliquam molestias reiciendis nam asperiores
+                officia omnis rem commodi dignissimos ipsam. Velit nesciunt doloribus odit in molestias quas quia
+                deleniti dolores, magnam tenetur eveniet tempore animi ex, temporibus reprehenderit ut officiis id sunt
+                expedita iure optio, accusantium dolorum. Quos sint consectetur omnis. Repudiandae, error nemo facilis
+                non temporibus consectetur ipsam voluptatum adipisci, quo accusantium quod quidem iste delectus ea
+                architecto nisi assumenda, tempore voluptatibus unde blanditiis ad beatae? Laudantium praesentium
+                accusantium labore aut nesciunt fuga sunt numquam earum fugiat vitae soluta laborum officia odio quo
+                alias facilis, tempora architecto suscipit ipsam nam quis optio. Recusandae nam, dolorum voluptatibus
+                repellendus reprehenderit eveniet nostrum beatae. Voluptate fuga excepturi sed dolorem ullam, ea, velit
+                quae tempora sapiente error dolore eligendi praesentium totam id eaque illum deleniti rerum maxime
+                debitis magni sit autem neque dolores non. Eaque ducimus necessitatibus error at praesentium vel maxime
+                dolorem? Ullam expedita ipsam quisquam ut fugiat adipisci odio unde cumque ducimus minus totam
+                consequuntur dolorum exercitationem non repellendus, vero mollitia repellat. Molestiae laudantium
+                maiores suscipit voluptate dolore vitae necessitatibus excepturi nihil temporibus odit, autem, dicta
+                vero hic reprehenderit facilis? Doloremque temporibus a ullam necessitatibus, soluta aliquid amet ex
+                reprehenderit nesciunt obcaecati ea dolorum neque voluptate! Expedita provident ipsam pariatur magnam.
+                Deleniti amet totam incidunt commodi perspiciatis, libero impedit fugit minima eligendi, illum nostrum
+                doloribus quibusdam quaerat beatae temporibus similique ab enim necessitatibus magnam quisquam nihil!
+                Reprehenderit, nam placeat! Optio nisi sint aspernatur distinctio officia animi, consequuntur ullam
+                alias eos maxime dolor voluptatem? Quam dolore voluptatum ex dolor corporis culpa veritatis eius quas
+                sequi, voluptate doloremque voluptas consequuntur maiores corrupti cum! Quod, expedita tempore pariatur
+                aliquid culpa laboriosam maiores, rem tenetur exercitationem eum praesentium aut laudantium earum
+                reiciendis numquam unde impedit perspiciatis adipisci quidem cumque laborum, ducimus quis. Similique
+                libero cum impedit deleniti fuga sint explicabo ipsam perferendis ipsum, quibusdam sunt et dolores est
+                recusandae. Commodi ipsum iure cumque repellat velit. Et ut sed mollitia dolores illo distinctio ratione
+                eum modi laudantium debitis magnam quis, maiores cupiditate optio ipsa corrupti illum ipsam vel
+                quibusdam voluptatem in porro rem! Et consectetur nobis perspiciatis? Cumque enim consequuntur voluptas
+                dolor dolorem! Assumenda excepturi soluta id illo perferendis necessitatibus rerum, molestias suscipit
+                animi maxime laborum odio inventore, minus doloremque, aliquid blanditiis aut repellendus amet!
+                Possimus, obcaecati? Voluptates ad nemo magnam sint minima eum, accusamus perferendis, voluptate
+                voluptas, exercitationem quod debitis recusandae natus tempora velit doloremque officiis provident.
+                Pariatur minima obcaecati minus quia ipsa? Neque, nulla similique explicabo quibusdam officiis
+                repellendus aperiam corrupti reiciendis saepe, veritatis voluptatum. Reiciendis, aliquid dolore aliquam
+                exercitationem, nobis impedit a in totam quas ratione accusamus ab quod, id corporis explicabo
+                assumenda. Vitae esse veritatis quam excepturi molestiae deserunt earum, dolore labore quidem rem
+                libero, dolor magnam enim nam ipsum unde dolores provident rerum accusantium voluptatem asperiores
+                similique. Expedita saepe iusto odio culpa minus pariatur cum, dignissimos aspernatur obcaecati, eos
+                porro sunt alias iure quae quasi? Quos voluptates molestiae nemo dolor praesentium, velit ratione
+                tempore quaerat, omnis consectetur facilis error corrupti reprehenderit laboriosam quia voluptas odit?
+                Accusamus odio nihil non, deserunt corporis neque deleniti culpa? Officiis alias debitis quos
+                repellendus accusantium suscipit possimus fuga voluptas natus est ducimus veritatis, at molestiae sint
+                tenetur ab omnis nostrum, odit, fugiat nihil voluptates laboriosam! Modi eum atque doloribus officia,
+                cum similique, eveniet porro fugiat perspiciatis, assumenda blanditiis suscipit enim numquam itaque
+                dolores. Similique illum aliquam illo eum maxime, cupiditate pariatur esse earum, doloribus ducimus quia
+                suscipit voluptates. Fugiat culpa est, quia eveniet expedita tempora explicabo aliquam temporibus facere
+                provident, reiciendis numquam eligendi at sit soluta distinctio, debitis id molestiae deleniti. Vel
+                sequi neque cupiditate porro, beatae fugiat ipsam quam alias voluptatum quas. Exercitationem doloribus
+                est cupiditate reiciendis quis. Iure quas expedita laboriosam a unde possimus est maiores animi dolore
+                corporis et voluptas repellat, labore eveniet ducimus pariatur harum ipsum cupiditate vero nihil odit
+                explicabo delectus. Doloremque maiores adipisci quos blanditiis inventore odio quibusdam tempora et rem,
+                iure quasi possimus laborum sint! Consequatur aliquid provident sequi officiis culpa corporis libero
+                voluptate velit, sit, modi, consectetur eligendi eum animi unde vel dolorum repudiandae temporibus quod
+                nihil totam cupiditate assumenda adipisci aut! Repellat cum perspiciatis dicta repudiandae eius. Cum
+                aspernatur maxime nesciunt, eius dolore tempora molestiae quibusdam dicta vitae ipsa earum voluptatum
+                commodi fugit natus tempore numquam excepturi nostrum, totam expedita distinctio doloremque et ducimus.
+                Necessitatibus soluta nam iusto repudiandae laboriosam, rerum dolores quos minima, nulla alias sequi
+                tempora adipisci veritatis rem! Non nostrum, sapiente reiciendis dolor odio, expedita eligendi aliquid
+                nam animi facere nulla? Fugiat minus nam libero deserunt harum, tenetur aliquam explicabo! Expedita
+                facilis exercitationem neque!</p>
+        </div>
+    </div>
+</body>
+
+</html>

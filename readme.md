@@ -93,3 +93,17 @@ Inline: span, a, i, em, strong, b
   11. MinWidth and MaxWidth
   > MinWidth: It will take minimum width what you are specified and maximum it will take device width.
   > MaxWidth: It will take width upto specified maximum width. It won't take more than specified width.
+
+  12. Flex
+   > It is used to create layouts in very easier. We have different properties with the flex.
+   > Those are flex, flex-direction, flex-wrap, align-items, align-content, justify-content etc...
+
+   > flex-direction: we have an two properties those are row and column. If it is row then flex-items displayed in row wise (horizentally). If it is column then flex-items displayed in column wise (vertically).
+   > flex-wrap: we have wrap and nowrap property values. If it is nowrap all items displayed in a single row even content is larger than device width, in this case horizental scrollbar added to the browser, default is nowrap. If it is wrap it will fit to the device width next items sit in next rows.
+   > align-items: Flex items arranged vertically either top to bottom or bottom to top based on our property value. we have an different property values those are baseline, flex-start, start, center, flex-end, end and stretch.
+   > align-content: we can align the content vertically with different properties those are center, flex-start, flex-end, baseline.
+   > justify-content: we can align the items horizental with different properties those are center, flex-start, flex-end, space-between, space-around and space-evenly.
+
+  13. Media Query
+   > If we want to create responsive webpage's needs to use media queries, that mean if it an mobile, tablet, desktops or larger screens then we have to use media queries.
+   
